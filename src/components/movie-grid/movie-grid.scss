@@ -18,3 +18,29 @@
         // padding: 50px;
     }
 }
+
+
+.movie-search {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    @include flex(center, center);
+
+    input {
+        width: 100%;
+        padding-right: 8rem;
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        cursor: pointer;
+        user-select: none;
+
+        @include mobile {
+            right: 1px;
+            top: 1px;
+        }
+    }
+}
