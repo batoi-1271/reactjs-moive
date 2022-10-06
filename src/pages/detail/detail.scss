@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@use "../../scss/" as *;
 
 .banner {
     height: 50vh;
@@ -49,7 +49,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             border-radius: $border-radius;
-            padding-top: 165%x;
+            padding-top: 165%;
         }
     }
 
@@ -74,14 +74,14 @@
 
         .genres {
             &>*~* {
-                margin-left: .5rem;
+                margin-left: 0.5rem;
             }
 
             &__item {
-                padding: .5rem 1.5rem;
+                padding: 0.5rem 1.5rem;
                 border: 2px solid $white;
                 border-radius: $border-radius;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 font-weight: 600;
                 background-color: $body-bg;
             }
@@ -98,11 +98,19 @@
         &__img {
             padding-top: 160px;
             background-size: cover;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
         }
 
         &__name {
-            font-size: .8rem;
+            font-size: 0.8rem;
         }
+    }
+}
+
+.video {
+    margin-bottom: 3rem;
+
+    &__title {
+        margin-bottom: 1.5rem;
     }
 }
